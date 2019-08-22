@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+/*=== basic css =====*/
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent !impotant;
+    padding: 30px 0;
+    z-index: 99;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Exo', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    border-width: 2px 5px;
+    border-style: solid;
+    border-color: transparent;
+    margin: 0 5px;
+    line-height: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+    border: 2px 5px transparent;
+    border-style: solid;
+    border-color: ;
+    border-image:linear-gradient( 30deg, #286d77, #714f2f,  #286d77);
+    border-image-slice: 1;
+}
+.navbar-toggler {
+    background-color: #fff;
+}
+
+/*=== == nav section end -=====*/
+
+
+
+.main_slick {
+    background: url(../images/banner1.png)top left no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    z-index: 1;
+}
+
+.slick-dots {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    width: 17px;
+    height: 17px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background-color: transparent;
+
+}
+
+.slick-dots li.slick-active button {
+    background-color: #286d77;
+}
+
+.slick-dots li {
+    display: inline-block;
+    padding: 8px;
+}
+
+.main_slick:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.52);
+    z-index: -1;
+}
+
+.bannerTXT {
+    color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 20;
+    padding: 50px 0px;
+    font-family: 'Maven Pro', sans-serif;
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+
+}
+
+.bannerTXT p {
+    text-align: right
+}
+
+
+/* ==banner section end == */
+
+
+#about {
+    padding: 60px 0;
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.col-md-6 h1 {
+    font-family: 'Maven Pro', sans-serif;
+    color: #028794;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.col-md-6 p{
+    font-family: 'Maven Pro', sans-serif;
+    color: #222222;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 10px 0;
+}
+
+.about_txt {
+    padding: 50px 5;
+}
+
+
+/* ==about section end == */
+
+
+
+#service {
+    background: url(../images/service.png)top left no-repeat;
+    background-size: cover;
+/*    height: 450px;*/
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+}
+
+#service:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.69);
+    z-index: -1;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+    padding: 50px 0;
+}
+
+.title h1 {
+    color: #018693;
+    font-size: 25.9px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.title h5 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px 0 5px 0;
+    line-height: 0px;
+    text-transform: uppercase;
+}
+
+.service_sec {
+    text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.service_sec h2 {
+
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.service_sec p {
+
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 15px;
+    padding: 2px;
+}
+
+#service .col-md-8 {
+    padding: 0;
+}
+
+#service .col-md-8 h2 {
+    padding: 16px 0;
+}
+
+#service i {
+    font-size: 22px;
+    background-color: #1e7d7d;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px 0 0 0;
+    margin-right: 10px;
+}
+
+.service_padding {
+    padding: 0px 0 30px 0;
+}
+.service_sec{
+    background-color:transparent;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: all 0.4s linear;
+}
+.service_sec:hover{
+    background-color:rgba(2, 135, 148, 0.33);
+    transform: scale(1.1);
+}
+.service_sec .row .col-md-12{
+    padding: 10px 0;
+}
+
+
+
+/*=== === service end === == */
+
+
+.news_chack{
+/*    background-image: linear-gradient(rgba(255, 0, 0, 0.54),rgba(0, 0, 255, 0.58),rgba(216, 0, 255, 0.54))*/
+}
+.news_chack h5 {
+    font-family: 'Exo', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 20px 0 0 0;
+}
+
+.news_chack h6 {
+    color: #028794;
+    font-size: 13px;
+}
+
+.news_chack p {
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+/*
+.w_p {
+    padding: 0 6px !important
+}
+*/
+
+.news_button {
+    /*
+    float: left;
+    text-align: right !important;
+*/
+    background-color: #028794;
+    border: 0;
+    font-family: 'Maven Pro', sans-serif;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/*===== news section end ======*/
+
+
+#work .row .col-md-12 button {
+    text-transform: uppercase;
+    font-family: 'Maven Pro', sans-serif;
+    color: #0b0b0b;
+    font-size: 12.2px;
+    height: 40px ;
+    width: 110px;
+    border: 2px solid transparent;
+    border-image:linear-gradient( 30deg, red, blue, pink);
+    border-image-slice: 1;
+
+}
+
+.active{
+    background-color: #00a1b1 !important
+}
+#work .row .col-md-6 .title p {
+    color: #303132;
+    text-align: center;
+}
+.work_img {
+    position: relative;
+}
+.btn-light:hover{
+    background-color:#00a1b1
+}
+.work_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(2, 135, 148, 0.65);
+    box-sizing: border-box;
+    padding: 70px 0;
+    font-family: 'Maven Pro', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    transform: scale(0);
+    transition: all .4s linear
+}
+
+.work_overlay p {
+    margin: 0;
+    line-height: 26px;
+
+}
+
+.work_overlay i {
+    color: #fff;
+}
+
+.work_img:hover .work_overlay {
+    transform: scale(1);
+}
+
+/*==== start footer npart ==*/
+
+#footer{
+   background:#070707;
+    margin: 50px 0 0 0;
+    padding: 30px 0;
+    
+}
+
+.foot_info h1{
+    font-family: 'Maven Pro', sans-serif;
+    color: #028794;
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.foot_info p{
+    font-family: 'Maven Pro', sans-serif;
+    color: #fff;
+    font-size: 13px;
+    text-transform:capitalize;
+    margin-bottom: 8px;
+}
+.foot_info p i{
+    color:#028794;
+     font-size: 15px;
+    padding: 0 5px;
+}
+.foot_icon p i{
+    color:#fff;
+     font-size: 15px;
+    padding: 0 5px;
+}
+
+
+
+
+/*=======*/
+.container-fluid{
+    background-color:transparent;
+    color: aliceblue;
+    background-image: repeating-linear-gradient(30deg, #000000, #028794,  #000000)
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
