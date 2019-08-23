@@ -1,153 +1,118 @@
 @media(max-width:575px) {
 
-    .main_slick {
-        height: 400px;
+    /*  banner start  */
+    .navbar-brand {
+        margin-right: 0;
     }
 
+    #navbarNav {
+        background-color: #222329
+    }
 
-    .bannerTXT {
-        color: #fff;
-        position: absolute;
-        right: 20;
-        bottom: 0;
-        width: 100%;
-        z-index: 20;
-        font-family: 'Maven Pro', sans-serif;
-        color: #fff;
-        font-size: 18px;
-        line-height: 15px;
-        font-weight: 400;
+    .navbar-brand img {
+        width: 75%;
+    }
+
+    .navbar-toggler {
+        background-color: #fff;
+    }
+
+    .main_banner {
+        height: 550px;
+        position: relative;
 
     }
 
-    .about_txt {
-        text-align: justify;
-
-    }
-
-    .about_txt h1 {
+    .banner_des {
+        padding: 70px 0;
+        box-sizing: border-box;
         text-align: center;
     }
 
-    .service_padding .col-md-4 {
+    .banner_des h1 {
+        visibility: hidden;
+    }
+
+    .banner_des h2 {
+        font-size: 23px;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .banner_des h4 {
+        font-size: 12px;
+        text-align: center
+    }
+
+    .banner-button a {
+        padding: 21px 9px 9px 9px;
+    }
+
+    .banner_btn ul li {
+        text-align: center
+    }
+
+    .banner_btn {
+        padding: 30px 0;
+    }
+
+    /*    banner end */
+    .about_des{
+        padding: 15px 10px;
+    }
+
+    .about_des p {
+        font-size: 12px
+    }
+
+    .title {
+        padding: 5px 0;
+        ;
+    }
+
+    /*    ========*/
+
+
+    .feature_dic {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+
+    #feature .nav-pills a i {
+        font-size: 22px;
+    }
+
+    #feature .nav-pills a h4 {
+        padding-left: 8px;
+        font-size: 12px;
+    }
+
+    #feature .nav-pills a h4 span {
+        font-size: 10px;
+
+
+    }
+
+    #feature .nav-pills a {
+        margin-right: 33px;
+    }
+
+    .form-control {
         margin: 10px 0;
     }
 
-    .btn {
-        margin: 5px;
+    #feature .nav-pills a {}
+
+
+
+
+    .feedk {
+        padding: 15px 10px;
     }
 
-    .work_overlay {
-        padding: 40px 0;
+    .feedk p {
+        font-size: 13px;
     }
+
 }
-
-@media(min-width:576px) and (max-width:767px) {
-    .main_slick {
-        height: 500px;
-    }
-
-    .bannerTXT {
-        color: #fff;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        z-index: 20;
-        font-family: 'Maven Pro', sans-serif;
-        color: #fff;
-        font-size: 25px;
-        line-height: 36px;
-        font-weight: 400;
-        padding: 68px 0px !important
-    }
-    .about_txt {
-        text-align: justify;
-
-    }
-
-    .about_txt h1 {
-        text-align: center;
-    }
-
-     .service_padding .col-md-4 {
-        margin: 15px 0;
-    }
-     .work_overlay {
-        padding: 70px 0;
-    }
-    #news .container .row .col-md-4{
-        margin: 20px 0;
-    }
-}
-
-@media(min-width:768px) and (max-width:991px) {
-    .main_slick {
-        height: 580px;
-    }
-    .bannerTXT {
-        color: #fff;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        z-index: 20;
-        font-family: 'Maven Pro', sans-serif;
-        color: #fff;
-        font-size: 35px;
-        line-height: 36px;
-        font-weight: 400;
-        padding: 80px 0px !important
-    }
-    .about_txt {
-        
-        text-align: justify;
-        font-size: 10px;
-
-    }
-
-    .about_txt h1 {
-        text-align: center;
-    }
-    #about .col-md-6 img{
-        padding: 85px 0  0 0;
-    }
-    .about_txt  p{
-        padding: 5px 0;
-    }
-}
-@media(min-width:992px) and (max-width:1199px){
-    .bannerTXT {
-        color: #fff;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        z-index: 20;
-        font-family: 'Maven Pro', sans-serif;
-        color: #fff;
-        font-size: 30px;
-        line-height: 36px;
-        font-weight: 400;
-        padding: 100px 0px !important;
-        width: 80%
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

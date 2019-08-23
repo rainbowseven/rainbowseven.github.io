@@ -1,421 +1,845 @@
 * {
+    padding: 0;
     margin: 0;
     outline: 0;
-    padding: 0;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-ol,ul {
+li,
+ul {
     list-style: none;
 }
 
-/*=== basic css =====*/
-
 .navbar {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 99
+}
+
+.nav-item {
+  
+}
+
+#navid .nav-link {
+    color: #f1f1f1;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+#navid .nav-link:hover {
+    color: #744fa0;
+    font-weight: 400;
+
+
+}
+.brand_stricky{
+   height: 50px; 
+}
+
+.navbar{
+    padding: 15px 0;
+}
+.stricky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.5s linear;
+    padding: 0;
+    background-color: #222329;
+    height: 60px; 
+   
+}
+#navid .free_trail{
+  background-color: #744fa0
+}
+#navid .free_trail:hover{
+    color: #744fa0;
+    background-color: #fff
+}
+#navid .active .nav-link{
+    color: #744fa0;
+}
+/*==== nav section end ==== */
+
+#banner .slick-dots {
+    text-align: center;
+    list-style: 0;
+
+}
+
+
+.main_banner {
+    height: 700px;
+    position: relative;
+
+}
+
+.main_banner:before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px;
-    background-color: transparent !impotant;
-    padding: 30px 0;
-    z-index: 99;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.72);
+    z-index: 2;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    font-family: 'Exo', sans-serif;
-    font-size: 17px;
+.banner_images img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+
+}
+
+.banner_overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: 3;
+    color: aliceblue
+}
+
+.banner_des {
+    padding: 200px 0;
+    box-sizing: border-box;
+}
+
+.banner_des h1 {
+    font-size: 56px;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    color: #fff;
     text-transform: uppercase;
-    display: block;
-    border-width: 2px 5px;
-    border-style: solid;
-    border-color: transparent;
-    margin: 0 5px;
-    line-height: 20px;
+    color: #fff;
+    text-align: right;
+    padding: 40px 0 27px 0;
+    line-height: 27px;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #fff;
-    border: 2px 5px transparent;
-    border-style: solid;
-    border-color: ;
-    border-image:linear-gradient( 30deg, #286d77, #714f2f,  #286d77);
-    border-image-slice: 1;
+.banner_des h1 span {
+    color: #744fa0;
 }
-.navbar-toggler {
+
+.banner_des h2 {
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+.banner_des h4 {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 10px;
+}
+
+.hl {
+    border-bottom: 1px solid #fff;
+    width: 80%;
+
+}
+
+.banner_btn {
+    padding: 50px 0;
+}
+
+.banner-button a i {
+    font-size: 33px;
+    padding: 5px;
+}
+
+.banner-button a {
+    text-decoration: none;
+    padding: 21px 13px 9px 13px;
+    background-color: #744fa0;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.google a {
+    color: #744fa0;
     background-color: #fff;
 }
 
-/*=== == nav section end -=====*/
-
-
-
-.main_slick {
-    background: url(../images/banner1.png)top left no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 700px;
-    position: relative;
-    z-index: 1;
+.banner-button a h4 {
+    display: inline-block;
+    padding: 5px 0;
+    text-align: left;
 }
 
+.banner-button a h4 span {
+    font-size: 18px;
+    line-height: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    display: block;
+}
+
+.banner_btn {
+    text-align: right
+}
+
+.banner_btn ul li {
+    display: inline-block
+}
+
+.banner-button a:hover {
+    color: #744fa0;
+    background-color: #fff;
+}
+
+.google a:hover {
+    background-color: #744fa0;
+    color: #fff;
+}
+
+/* ===== banner section end ===== */
+
+
+
+
+
+.title {
+
+    text-align: center;
+    padding: 30px;
+}
+
+.title h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #353535;
+    text-align: center;
+
+
+
+}
+
+.title img {
+    text-align: center;
+}
+
+.about_des {
+    padding: 0 40px 0 100px;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #353535;
+    text-align: center;
+    line-height: 20px;
+    box-sizing: border-box
+}
+
+.about_des p {
+    padding: 10px 0;
+}
+
+#about {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.about_pad {
+    padding-left: 30px;
+}
+
+/*=== about section end =======*/
+
+#feature {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+#feature .nav-pills a {
+    color: #444;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+    padding-left: 2px;
+    margin-right: 70px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    transition: all 0.5s linear;
+}
+
+#feature .nav-pills a:hover,
+#feature .nav-pills .nav-link.active {
+    margin-right: 10px;
+    color: #744fa0;
+    background-color: transparent;
+    border-color: #744fa0;
+    transition: all .5s linear;
+}
+
+#feature .nav-pills .nav-link.active:last-child {
+    border-top: 0
+}
+
+#feature .nav-pills a:last-child {
+    border-style: none;
+}
+
+#feature .nav-pills a i {
+    font-size: 42px;
+}
+
+#feature .nav-pills a h4 {
+    padding-left: 8px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase
+}
+
+#feature .nav-pills a h4 span {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px 0;
+    text-transform: capitalize
+}
+
+.feature_dic {
+    text-align: right;
+    padding-top: 100px;
+}
+
+.feature_dic h3 {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #353535;
+    padding: 10px 0;
+}
+
+.feature_dic p {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #555555
+}
+
+.img_width {
+    width: 100%;
+    padding: 0 10%;
+}
+
+/*  ================ 
+    video section start
+    ================*/
+#video{
+    padding: 20px 0;
+}
+.video_bg {
+    background: url(../images/videoIMG.jpg)top left no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    background-attachment: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.video_bg:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.71);
+    z-index: -1;
+}
+
+.video_bg  i {
+    font-size: 50px;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.video_bg  i:hover {
+    color: #744fa0;
+    background-color: #fff;
+}
+
+.video_bg i {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+
+/*======== pricinhg =======*/
+.pricing {
+    padding-bottom: 30px;
+    border-radius: 10%;
+
+
+}
+
+.extra_mar {
+    margin-right: 0px;
+}
+
+.free_plan {
+    background-color: #f1f1f1;
+    border-radius: 20px 20px 0 0;
+    color: #353535;
+}
+
+.free_plan h3 {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    text-align: center;
+    padding: 25px 0
+}
+
+.price {
+    padding: 20px;
+}
+
+.price_money {
+    border-radius: 50%;
+    border: 3px solid #f1f1f1;
+    width: 115px;
+    height: 115px;
+    margin: auto;
+}
+
+.price_money h4 {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #353535;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.price_money h4 span {
+    font-size: 41px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #353535;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.price_money p {
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #555555;
+    text-align: center;
+}
+
+.backup {
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 0 0 20px 20px;
+}
+
+.backup_txt {
+    box-sizing: border-box;
+    padding: 35px 70px;
+    text-align: center;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #555555;
+    text-transform: capitalize;
+}
+
+
+.bk_singup {
+    width: 100px;
+    height: 35px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: -17px;
+    transform: translateX(-50%);
+    border: 2px solid #555555;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 7px 0px;
+    color: #353535;
+}
+
+.bk_singup a {
+
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: none;
+    color:  #744fa0;
+
+    text-align: center;
+    display: block;
+}
+
+.pricing_br:hover .free_plan {
+    background-color: #744fa0;
+    color: #fff;
+    transition: all 0.5s linear;
+}
+
+.pricing_br:hover .bk_singup {
+    background-color: #744fa0;
+    transition: all 0.5s linear;
+
+}
+
+.pricing_br:hover .bk_singup a {
+    color: #fff;
+    transition: all 0.5s linear;
+}
+
+
+/*================*/
 .slick-dots {
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.slick-dots li button {
-    font-size: 0;
-    width: 17px;
-    height: 17px;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    background-color: transparent;
-
-}
-
-.slick-dots li.slick-active button {
-    background-color: #286d77;
+    list-style: 0;
 }
 
 .slick-dots li {
     display: inline-block;
-    padding: 8px;
-}
-
-.main_slick:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.52);
-    z-index: -1;
-}
-
-.bannerTXT {
-    color: #fff;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 50%;
-    z-index: 20;
-    padding: 50px 0px;
-    font-family: 'Maven Pro', sans-serif;
-    color: #fff;
-    font-size: 40px;
-    line-height: 40px;
-    font-weight: 400;
-
-}
-
-.bannerTXT p {
-    text-align: right
-}
-
-
-/* ==banner section end == */
-
-
-#about {
-    padding: 60px 0;
-    background-color: #fff;
-    padding: 50px 0;
-}
-
-.col-md-6 h1 {
-    font-family: 'Maven Pro', sans-serif;
-    color: #028794;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 36px;
-    text-transform: uppercase;
-}
-
-.col-md-6 p{
-    font-family: 'Maven Pro', sans-serif;
-    color: #222222;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 18px;
-    padding: 10px 0;
-}
-
-.about_txt {
-    padding: 50px 5;
-}
-
-
-/* ==about section end == */
-
-
-
-#service {
-    background: url(../images/service.png)top left no-repeat;
-    background-size: cover;
-/*    height: 450px;*/
-    position: relative;
-    z-index: 1;
-    background-color: transparent;
-}
-
-#service:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.69);
-    z-index: -1;
-}
-
-.title {
+    margin: 10px;
     text-align: center;
-    font-family: 'Maven Pro', sans-serif;
-    padding: 50px 0;
+
 }
 
-.title h1 {
-    color: #018693;
-    font-size: 25.9px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.title h5 {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 15px 0 5px 0;
-    line-height: 0px;
-    text-transform: uppercase;
-}
-
-.service_sec {
-    text-align: center;
-    font-family: 'Maven Pro', sans-serif;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 400;
-}
-
-.service_sec h2 {
-
-    font-size: 17px;
-    font-weight: 400;
-}
-
-.service_sec p {
-
-    font-size: 14px;
-    font-weight: 400;
-    text-align: justify;
-    line-height: 15px;
-    padding: 2px;
-}
-
-#service .col-md-8 {
-    padding: 0;
-}
-
-#service .col-md-8 h2 {
-    padding: 16px 0;
-}
-
-#service i {
-    font-size: 22px;
-    background-color: #1e7d7d;
+.slick-dots li button {
+    font-size: 0;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
+    border: 3px solid #111;
+    background-color: transparent
+}
+
+.slick-dots li.slick-active button {
+    border-color: #744fa0;
+    position: relative
+}
+
+.slick-dots li.slick-active button:before {
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+    width: 4px;
+    height: 4px;
+    background-color: #744fa0;
+
+}
+
+
+
+/* ===== team section end ====*/
+#awesome_team {
+    /*    padding-top: 100px*/
+}
+
+#awesome_team .slick-track {
+    padding-bottom: 135px;
+}
+
+.team-main {
+    margin-top: 80px;
+    transition: all 0.3s linear;
+}
+
+.team-main:hover {
+    margin-top: 0;
+}
+
+.team_icon {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.69);
+    opacity: 0
+}
+
+.team_icon ul li {
+    display: inline-block;
+    margin-top: 150px;
+
+}
+
+.team_icon ul li a {
+    display: block;
     height: 50px;
     width: 50px;
+    font-size: 30px;
     text-align: center;
-    box-sizing: border-box;
-    padding: 15px 0 0 0;
-    margin-right: 10px;
-}
-
-.service_padding {
-    padding: 0px 0 30px 0;
-}
-.service_sec{
-    background-color:transparent;
+    margin: 5px;
+    color: #1da1f2;
+    background-color: #fff;
     padding: 5px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    transform: scale(1);
-    transition: all 0.4s linear;
-}
-.service_sec:hover{
-    background-color:rgba(2, 135, 148, 0.33);
-    transform: scale(1.1);
-}
-.service_sec .row .col-md-12{
-    padding: 10px 0;
-}
-
-
-
-/*=== === service end === == */
-
-
-.news_chack{
-/*    background-image: linear-gradient(rgba(255, 0, 0, 0.54),rgba(0, 0, 255, 0.58),rgba(216, 0, 255, 0.54))*/
-}
-.news_chack h5 {
-    font-family: 'Exo', sans-serif;
-    font-size: 13px;
-    font-weight: 300;
-    padding: 20px 0 0 0;
-}
-
-.news_chack h6 {
-    color: #028794;
-    font-size: 13px;
-}
-
-.news_chack p {
-    text-align: justify;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: 'Maven Pro', sans-serif;
-}
-
-/*
-.w_p {
-    padding: 0 6px !important
-}
-*/
-
-.news_button {
-    /*
-    float: left;
-    text-align: right !important;
-*/
-    background-color: #028794;
-    border: 0;
-    font-family: 'Maven Pro', sans-serif;
-    color: #fff;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-/*===== news section end ======*/
-
-
-#work .row .col-md-12 button {
-    text-transform: uppercase;
-    font-family: 'Maven Pro', sans-serif;
-    color: #0b0b0b;
-    font-size: 12.2px;
-    height: 40px ;
-    width: 110px;
-    border: 2px solid transparent;
-    border-image:linear-gradient( 30deg, red, blue, pink);
-    border-image-slice: 1;
+    border-radius: 50%;
+    transition: all .2s linear;
 
 }
 
-.active{
-    background-color: #00a1b1 !important
+.team-main:hover .team_icon {
+    opacity: 1
 }
-#work .row .col-md-6 .title p {
-    color: #303132;
-    text-align: center;
-}
-.work_img {
-    position: relative;
-}
-.btn-light:hover{
-    background-color:#00a1b1
-}
-.work_overlay {
+
+.team_about {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    z-index: -1;
+    text-align: center;
+    padding: 28px 70px;
+    box-sizing: border-box;
+    border: 2px solid #f1f1f1;
+    border-radius: 10px 10px 15px 15px;
+    transition: all .5s linear;
+
+}
+
+.team_about h4 {
+
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #353535;
+    text-transform: capitalize;
+
+    text-align: center;
+}
+
+.team_about h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #353535;
+    padding: 3px 0 4px 0;
+    text-transform: capitalize;
+}
+
+.team_about p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #353535;
+    text-transform: capitalize;
+}
+
+.team-main:hover .team_about {
+    top: 95%;
+}
+
+.team_icon ul li a:hover {
+    color: #fff;
+    background-color: #1da1f2;
+}
+
+/*====== feedback ====*/
+.feedback {
+    background: url(../images/feedback-bg.png) top left no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    z-index: 3;
+    padding: 50px 0;;
+}
+
+.feedback:before {
+    content: "";
+    position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(2, 135, 148, 0.65);
-    box-sizing: border-box;
-    padding: 70px 0;
-    font-family: 'Maven Pro', sans-serif;
-    color: #fff;
-    text-transform: uppercase;
-    transform: scale(0);
-    transition: all .4s linear
+    background-color: rgba(0, 0, 0, 0.65);
+    top: 0;
+    left: 0;
+    z-index: -1
 }
 
-.work_overlay p {
-    margin: 0;
-    line-height: 26px;
+.feedback_slide {
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+}
+
+.feedback_slide:after {
+    content: "";
+    position: absolute;
+    border-top: 25px solid #f1f1f1;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.feedk {
+    background-color: transparent;
+    width: 100%;
+    padding: 30px 50px 5px 50px;
+    position: relative;
+
 
 }
 
-.work_overlay i {
-    color: #fff;
+.feedk p {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400px;
+    color: #555555;
 }
 
-.work_img:hover .work_overlay {
-    transform: scale(1);
+.feedk span {
+    padding: 5px;
 }
 
-/*==== start footer npart ==*/
+.feedk span i {
+    color: #744fa0
+}
 
-#footer{
-   background:#070707;
-    margin: 50px 0 0 0;
+.feedk h3 {
+    color: #353535;
+    line-height: 20px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.feedk h4 {
+    line-height: 20px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600px;
+    text-transform: capitalize;
+}
+
+.feedback-col {}
+
+
+
+
+.clients {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    opacity: .5
+}
+
+.clients img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.clients_slider {
+    padding: 50px 0 0 0;
+}
+
+.slick-center .clients {
+    transform: scale(1.2);
+    border: 2px solid #744fa0;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+#feedfack_full .clients_slider .slick-list {
+    padding: 10px 0px !important
+}
+
+
+
+
+/*====== =tuch ===*/
+
+#get_tuch {
+    padding: 50px 0;
+}
+
+.messsage {
+    margin: 20px 0;
+
+}
+
+.messsage textarea {
     padding: 30px 0;
-    
 }
 
-.foot_info h1{
-    font-family: 'Maven Pro', sans-serif;
-    color: #028794;
-    font-size: 19px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+/*====== footer =====*/
+#footer{
+    background-color: #353535;
+    padding: 20px 0 10px 0;
 }
-
-.foot_info p{
-    font-family: 'Maven Pro', sans-serif;
+#footer ul{
+    padding: 8px 0;
+}
+#footer ul li{
+    display: inline-block;
+  
+   
+}
+#footer ul li a i{
+    font-size: 43px;
+      color: #fff;
+    padding: 4px;
+    text-align: center;
+}
+#footer p{
     color: #fff;
-    font-size: 13px;
-    text-transform:capitalize;
-    margin-bottom: 8px;
+    font-size: 14px;
 }
-.foot_info p i{
-    color:#028794;
-     font-size: 15px;
-    padding: 0 5px;
+#footer p span{
+    color: #744fa0
 }
-.foot_icon p i{
-    color:#fff;
-     font-size: 15px;
-    padding: 0 5px;
-}
-
-
-
-
-/*=======*/
-.container-fluid{
-    background-color:transparent;
-    color: aliceblue;
-    background-image: repeating-linear-gradient(30deg, #000000, #028794,  #000000)
-    
-}
-
-
-
-
-
 
 
 
