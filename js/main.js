@@ -1,41 +1,20 @@
 $(function () {
+    jQuery("#bgndVideo").YTPlayer({
+       
+        
+        playOnlyIfVisible: false 
+    });
 
-    var $menu = $('.navbar').offset().top;
-
-    $(window).scroll(function () {
-        var $scrolling = $(this).scrollTop();
-
-        if ($scrolling >= $menu) {
-
-            $('.navbar').addClass('stricky')
-           
-        }
-        else{
-            $('.navbar').removeClass('stricky')
-        }
-    })
-
-
-
-
-//    video section venobox
-    
-    
-$('.venobox').venobox(); 
-    
-//    ==========
-
-
-
-    $('#banner').slick({
-        arrows: false,
-        speed: 300,
-        autoplay: true,
-        dots: true,
-        autoPlay: true,
+    $('.banner_slider').slick({
+        infinite: true,
+        speed: 600,
         slidesToShow: 1,
+        autoplaySpeed: 1500,
+        autoplay: true,
+        fade: true,
         slidesToScroll: 1,
-        focusOnSelect: true,
+        prevArrow: '.slick-prev',
+        nextArrow: '.slick-next',
         responsive: [
             {
                 breakpoint: 1024,
@@ -50,7 +29,7 @@ $('.venobox').venobox();
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 2
                 }
     },
             {
@@ -60,22 +39,19 @@ $('.venobox').venobox();
                     slidesToScroll: 1
                 }
     }
-   
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
   ]
     });
 
-
-    //    screenshorts slider
-
-    $('.slider_ss').slick({
-        arrows: false,
+    $('.testi_slider').slick({
+        infinite: true,
         speed: 300,
-        autoplay: true,
-        dots: true,
-        autoPlay: true,
-        slidesToShow: 5,
+        slidesToShow: 2,
         slidesToScroll: 1,
-        focusOnSelect: true,
+        prevArrow: '.slick-prev',
+        nextArrow: '.slick-next',
         responsive: [
             {
                 breakpoint: 1024,
@@ -100,55 +76,16 @@ $('.venobox').venobox();
                     slidesToScroll: 1
                 }
     }
-    
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
   ]
     });
 
-
-    //pricing slider
-
-
-
-    $('.main_pricing').slick({
+    $('.service_slider').slick({
         arrows: false,
+        infinite: true,
         speed: 300,
-        autoPlay: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-    },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-    },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-    }
-   
-  ]
-    });
-
-
-    //    team member 
-    $('.team_slider').slick({
-        arrows: false,
-        speed: 300,
-        autoPlay: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [
@@ -166,48 +103,6 @@ $('.venobox').venobox();
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
-                }
-    },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-    }
-
-  ]
-    });
-
-
-
-
-    //    feedbaack slidder 1
-
-    $('.feedback_slide').slick({
-        focusOnSelect: true,
-        infinite: true,
-        arrows: false,
-        autoPlay: true,
-        speed: 300,
-        asNavFor: '.clients_slider',
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-    },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
                 }
     },
             {
@@ -224,16 +119,9 @@ $('.venobox').venobox();
     });
 
 
-    //    feedbaack slidder 2
-
-    $('.clients_slider').slick({
-        focusOnSelect: true,
-        infinite: true,
+    $('.team_slider').slick({
         arrows: false,
-        autoPlay: true,
-        centerMode: true,
-        centerPadding: 0,
-        asNavFor: '.feedback_slide',
+        infinite: true,
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -242,7 +130,7 @@ $('.venobox').venobox();
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 1,
+                    slidesToScroll: 3,
                     infinite: true,
                     dots: true
                 }
@@ -250,8 +138,8 @@ $('.venobox').venobox();
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1
+                    slidesToShow: 2,
+                    slidesToScroll: 2
                 }
     },
             {
@@ -261,15 +149,46 @@ $('.venobox').venobox();
                     slidesToScroll: 1
                 }
     }
-   
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
   ]
     });
 
 
+    var mixer = mixitup('.filter_img');
 
 
 
 
+
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+
+
+
+    $(".nav_logo3 h1").click(function () {
+
+        $("html,body").animate({
+
+            scrollTop: 0
+        }, 3000);
+
+    });
+
+
+
+    var typed = new Typed('.typed', {
+        strings: [
+            "First sentence.",
+            "Second sentence."],
+        typeSpeed: 60,
+        typeSpeed: 60,
+    backSpeed: 60,
+    backDelay: 500,
+    });
 
 
 

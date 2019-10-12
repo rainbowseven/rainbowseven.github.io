@@ -1,0 +1,176 @@
+@media(max-width:575px) {
+    .nav_logo2 {
+
+        visibility: visible
+    }
+
+    .nav_logo {
+
+        visibility: hidden
+    }
+
+    #banner {
+        height: 450px;
+
+    }
+
+    .full_banner {
+        height: 450px;
+    }
+
+    .banner_txt {
+
+        padding-top: 90px;
+        width: 300px;
+
+    }
+
+    .banner_txt h5 {
+        font-size: 13px;
+
+    }
+    .about_button .btn p{
+         font-size: 13px;
+    }
+    .banner_txt h1 {
+        font-size: 35px;
+
+        letter-spacing: 5px;
+    }
+
+    .banner_txt p {
+        font-size: 16px;
+
+    }
+
+    .banner_txt p span {
+        display: none;
+    }
+
+    #banner {
+        padding-bottom: 120px;
+    }
+
+    */ #about_us {
+        background-color: #060a2e;
+        padding: 60px 0;
+    }
+
+    #about_us .title {
+        padding-top: 0;
+        padding-bottom: 30px;
+
+    }
+
+    .about_images {
+
+        padding-top: 0px;
+        padding-bottom: 20px;
+
+    }
+
+    .about_detales {
+        padding-left: 15px;
+        text-align: center;
+    }
+
+    #about_us .about_detales .btn {
+        padding: 10px 23px;
+    }
+
+    #service {
+        padding: 50px 0;
+    }
+
+
+    .work_overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(232, 32, 79, 0.53);
+        box-sizing: border-box;
+        padding: 20px 0;
+        font-family: 'Maven Pro', sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        transform: scale(0);
+        transition: all .4s linear
+    }
+
+    .work_overlay p {
+        margin: 0;
+        line-height: 26px;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+    }
+
+    #fortfolio {
+        padding: 50px 0;
+    }
+
+    #skill {
+        padding: 50px 0;
+    }
+
+    .skill_button ul li {
+        display: inline-block
+    }
+
+    .skill_button ul li button {
+        width: 95px;
+        height: 55px;
+        font-size: 14px;
+        padding: 0
+    }
+
+    .skill_button {
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+
+    .main_skill {
+        padding-left: 10px
+    }
+
+    .count h1 {
+        font-size: 20px;
+    }
+
+    #counter {
+        padding: 0px
+    }
+
+    #counter .main_counter .col-6 {
+        padding-left: 13px !important;
+        margin-top: 15px;
+    }
+    .main_service:hover .servic_line {
+        width: 230px;
+
+    }
+    .count{
+        width: 135px;
+    }
+    
+    .navbar-light .navbar-toggler{
+        margin: 5px;
+    }
+   .team_deails{
+        margin: 0px ;
+    }
+    #fortfolio{
+        padding: 100px 0;
+    }
+    .work_img{
+        margin: 0;
+    }
+ .main_folio{
+     padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
