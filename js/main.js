@@ -1,10 +1,13 @@
 $(function () {
-    jQuery("#bgndVideo").YTPlayer({
+    
+    
+    $("#bgndVideo").YTPlayer({
        
-        
         playOnlyIfVisible: false 
     });
-
+    
+    
+    
     $('.banner_slider').slick({
         infinite: true,
         speed: 600,
@@ -39,11 +42,13 @@ $(function () {
                     slidesToScroll: 1
                 }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
     });
+    
+    
+    
+    
+    
 
     $('.testi_slider').slick({
         infinite: true,
@@ -76,12 +81,13 @@ $(function () {
                     slidesToScroll: 1
                 }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
     });
 
+    
+    
+    
+    
     $('.service_slider').slick({
         arrows: false,
         infinite: true,
@@ -112,12 +118,13 @@ $(function () {
                     slidesToScroll: 1
                 }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
     });
 
+    
+    
+    
+    
 
     $('.team_slider').slick({
         arrows: false,
@@ -149,12 +156,14 @@ $(function () {
                     slidesToScroll: 1
                 }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
+  
   ]
     });
 
+    
+    
+    
+    
 
     var mixer = mixitup('.filter_img');
 
@@ -177,19 +186,6 @@ $(function () {
         }, 3000);
 
     });
-
-
-
-    var typed = new Typed('.typed', {
-        strings: [
-            "First sentence.",
-            "Second sentence."],
-        typeSpeed: 60,
-        typeSpeed: 60,
-    backSpeed: 60,
-    backDelay: 500,
-    });
-
 
 
 })
